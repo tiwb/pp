@@ -1,0 +1,135 @@
+---
+layout: default
+title: Home
+---
+
+<h2>什么是行走脚本？</h2>
+<div class="section">
+  <p>行走路线就是游戏开始后，控制玩家两个号移动的对键盘模拟操作的脚本。总体来说，通过修改行走路线，您可以让游戏中的人物按照您的意愿行走！</p>
+  <p>天一最经常使用的几个行走脚本：</p>
+  <base target="_blank">
+  <ol>
+    <li><a href="scripts/script_default1.txt">小乖工厂01精确脚本</a> <font color="#FF0000">默认脚本！</font></li>
+    <li><a href="scripts/script_default2.txt">小乖工厂01Win98经典脚本 （防抢刷）</a></li>
+    <font color="#FF0000">推荐！</font> 
+    <li><a href="scripts/script_default3.txt">小乖赛车06防卡版（v3.5以上，98下不能使用） 
+    </a><font color="#FF0000">v3.5默认！</font></li>
+    <li><a href="scripts/script_default4.txt">小乖宝藏06吃钱脚本（v3.5b以上，不需防卡）</a> 
+    <font color="#FF0000">v3.5b默认！</font></li>
+    <li><a href="scripts/script_factory.txt">工厂脚本大全</a></li>
+    <li><a href="scripts/script_car.txt">赛车脚本大全</a></li>
+    <li><a href="scripts/script_forest.txt">森林脚本大全</a></li>
+    <li><a href="scripts/script_desert.txt">沙漠脚本大全</a></li>
+    <li><a href="scripts/script_blua.txt">宝藏脚本大全</a></li>
+    <li><a href="scripts/script_other.txt">其他脚本</a></li>
+  </ol>
+  <base target="_self">
+</div>
+
+<h2>如何编写行走脚本？</h2>
+<div class="section">
+  <p>编写行走脚本很简单。只要模拟键盘按键就可以了。但是要想把脚本写好。走位精确，还能防止别人来您的房间抢刷，就要下一定的工夫了。可以先参考一下标准脚本的写法，然后根据下面的命令说明和按键说明，进行自由发挥！别忘了，写了好的脚本，一定要发给我，放上来与大家一同分享哦！</p>
+  <p>命令说明： 
+  <TABLE width="500" border=1 cellpadding="4" style="BORDER-COLLAPSE: collapse">
+    <TBODY>
+      <TR bgColor=#eeeeee>
+        <TD nowrap>中文命令</TD>
+        <TD nowrap>英文命令</TD>
+        <TD width="100">举例</TD>
+        <TD>说明</TD></TR>
+      <TR>
+        <TD colSpan=2>//</TD>
+        <TD>//注释</TD>
+        <TD>注释内容</TD></TR>
+      <TR>
+        <TD>按下</TD>
+        <TD>KeyDown</TD>
+        <TD>按下 1P_上</TD>
+        <TD>按下玩家1向上键</TD></TR>
+      <TR>
+        <TD>松开</TD>
+        <TD>KeyUp</TD>
+        <TD>松开 1P_上</TD>
+        <TD>松开玩家1向上键</TD></TR>
+      <TR>
+        <TD rowSpan=2>按键</TD>
+        <TD rowSpan=2>KeyPress</TD>
+        <TD>按键 1P_泡</TD>
+        <TD>按一下玩家1放泡泡键</TD></TR>
+      <TR>
+        <TD>按键 1P_上 500</TD>
+        <TD>按下1P向上键500毫秒然后松开</TD></TR>
+      <TR>
+        <TD>等待</TD>
+        <TD>Sleep</TD>
+        <TD>等待 1000</TD>
+        <TD>等待1000毫秒（1秒）</TD></TR>
+      <TR>
+        <TD>检查地板</TD>
+        <TD>WaitGround</TD>
+        <TD>检查地板 0 2</TD>
+        <TD>等待，直到从左上角数坐标为0,2的格子上没有任何东西</TD></TR>
+      <TR>
+        <TD>发言</TD>
+        <TD>Say</TD>
+        <TD>发言 "天一网络"</TD>
+        <TD>使游戏中的人物说出"天一网络"四个字</TD></TR></TBODY></TABLE>
+  <P>按键说明 ： </P>
+  <TABLE width=352 border=1 cellpadding="4" style="BORDER-COLLAPSE: collapse">
+    <TBODY>
+      <TR bgColor=#eeeeee>
+        <TD width=71>键盘</TD>
+        <TD width=78>中文</TD>
+        <TD width=79>英文</TD>
+        <TD width=96>数字</TD></TR>
+      <TR>
+        <TD>R</TD>
+        <TD>1P_上</TD>
+        <TD>1P_Up</TD>
+        <TD>82</TD></TR>
+      <TR>
+        <TD>F</TD>
+        <TD>1P_下</TD>
+        <TD>1P_Down</TD>
+        <TD>70</TD></TR>
+      <TR>
+        <TD>D</TD>
+        <TD>1P_左</TD>
+        <TD>1P_Left</TD>
+        <TD>68</TD></TR>
+      <TR>
+        <TD>G</TD>
+        <TD>1P_右</TD>
+        <TD>1P_Right</TD>
+        <TD>71</TD></TR>
+      <TR>
+        <TD>SHIFT</TD>
+        <TD>1P_泡</TD>
+        <TD>1P_Bomb</TD>
+        <TD>16</TD></TR>
+      <TR>
+        <TD>UP</TD>
+        <TD>2P_上</TD>
+        <TD>2P_Up</TD>
+        <TD>38</TD></TR>
+      <TR>
+        <TD>DOWN</TD>
+        <TD>2P_下</TD>
+        <TD>2P_Down</TD>
+        <TD>40</TD></TR>
+      <TR>
+        <TD>LEFT</TD>
+        <TD>2P_左</TD>
+        <TD>2P_Left</TD>
+        <TD>37</TD></TR>
+      <TR>
+        <TD>RIGHT</TD>
+        <TD>2P_右</TD>
+        <TD>2P_Right</TD>
+        <TD>39</TD></TR>
+      <TR>
+        <TD>RSHIFT</TD>
+        <TD>2P_泡</TD>
+        <TD>2P_Bomb</TD>
+        <TD>161</TD></TR></TBODY></TABLE>
+</div>
